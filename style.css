@@ -435,12 +435,9 @@
   .formcontato{
      display: flex;
      flex-direction: column;
-     padding-left: 5%;
+     padding-left: 15%;
   }
-  .formcontato__contacto{
-     display: flex;
-     padding-left: 5%;
-  }
+ 
  
  /*Footer*/
  }
