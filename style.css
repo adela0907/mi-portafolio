@@ -435,7 +435,7 @@
   .formcontato{
      display: flex;
      flex-direction: column;
-     padding-left: 20px;
+     padding-left: 5%;
   }
   .formcontato__contacto{
      display: flex;
