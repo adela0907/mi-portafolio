@@ -93,7 +93,7 @@
          background:#c8bffe;
          border: 2px solid #c8bffe;
          border-radius: 10px;
-         padding-left: 30px;
+         padding-left: 40px;
  }
  
  .skills__line{
@@ -101,6 +101,7 @@
      border: 2px solid #c8bffe;
      border-radius: 10px;
      text-align: center;
+     width: 50%;
  }
  /*Sección Hobbies*/
  .hobbies__line{
@@ -111,8 +112,22 @@
  }
  
  /* Experiencia Académica*/
- 
+
+ .academic__courses__box{
+    background: #c8bffe;
+    border-radius: 10px;
+    
+ }
  /* experiencia*/
+ .experience__box{
+    background: #c8bffe;
+    border-radius: 10px;
+ }
+ .experience__info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
  .experience button{
      background: #c8bffe;
      color: rgb(0, 0, 0);
@@ -241,8 +256,8 @@
      flex-wrap: wrap;
      align-items: center;
      gap: 50px;
-     padding-right: 20px;
-    
+     padding-left: 20px;
+
  }
  
  
@@ -252,6 +267,7 @@
      flex-direction: column;
      align-items: center;
      padding-top: 50px;
+     padding-left: 20px;
  
  }
  .hobbies__line{
@@ -268,40 +284,44 @@
      flex-direction: column;
      align-items: center;
      padding-top: 50px;
+     padding-left: 20px;
+     
+ }
+ .academic__courses__box{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
  }
  
  /*Experiencia Profesional*/
  .experience{
      display: flex;
-     flex-direction: column;
      flex-wrap: wrap;
      justify-content: center;
      padding-top: 50px;
      align-items: center;
-     padding-left: 10%;
  }
- 
+
  .experience__box{
      display: flex;
-     flex-direction: row;
+     flex-wrap: wrap;
      gap: 30px;
-     width: 100%; 
+     width: 95%; 
      align-items: center;
-     padding-left: 80px;
      padding-top: 30px;
+     padding-left: 20px;
+     padding-bottom: 30px;
  }
  .experience__img{
-     display: flex;
-     flex-direction: row;
-     width: 50%;
+     width: 70%;
  }
  }
  .formcontato{
-     width: 70%;
+     width: 100%;
      display: flex;
      flex-direction:row;
      align-items: center;
-     padding-left: 15%;
+     padding-left: 20px;
      padding-top: 150px;
  }
  .imagen_contacto{
@@ -389,7 +409,7 @@
      align-items: center;
      gap: 20px;
      white-space: nowrap;
-     padding-left: 25px;
+     width: 100%;
  }
  
  /*Hobbies*/
@@ -435,7 +455,7 @@
   .formcontato{
      display: flex;
      flex-direction: column;
-     padding-left: 15%;
+     
   }
  
  
