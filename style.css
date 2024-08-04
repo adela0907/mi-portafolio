@@ -19,6 +19,7 @@
      text-decoration: none;
      color: var(--cor-de-link);
  }
+
  nav li :hover{
     color:#a37dfb ;
 }
@@ -39,9 +40,13 @@
  section.title{
  padding-top: 30px;
  }
- .title__profile{
-     border-radius: 50%;
- }
+ .title__profile {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+.title__profile:hover {
+    transform: scale(1.1);
+}
  .title__bio{
      font-size: 45px;
      font-weight: bold;
@@ -103,17 +108,24 @@
      text-align: center;
      width: 50%;
  }
+ .skills__box:hover{
+    transform: scale(1.3);
+ }
  /*Sección Hobbies*/
  .hobbies__line{
      background: #c8bffe;
      border: 2px solid #c8bffe;
      border-radius: 10px;
- 
+ }
+ .hobbies__box:hover{
+    transform: scale(1.3);
  }
  
  /* Experiencia Académica*/
 
  .academic__courses__box{
+    display: flex;
+    align-items: center;
     background: #c8bffe;
     border-radius: 10px;
     
@@ -128,14 +140,15 @@
     flex-direction: column;
     align-items: center;
  }
- .experience button{
-     background: #c8bffe;
-     color: rgb(0, 0, 0);
-     padding: 14px 28px;
-     cursor: pointer;
-     border-radius: 5px;
-     font-weight: bold;
- }
+ .experience button {
+    background: #c8bffe;
+    color: rgb(0, 0, 0);
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
  .experience button:hover{
      background: #8b5ff0;  
  }
@@ -167,6 +180,7 @@
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
+    transition: background 0.3s ease;
 }
 .formcontato__text button:hover{
     background:  #8b5ff0; 
@@ -177,6 +191,7 @@
      display: flex;
      padding: 2rem;
      justify-content: center;
+     background-color:rgb(209, 195, 253);
  }
  .footer__rodape{
      display: flex;
@@ -275,7 +290,14 @@
      flex-wrap: wrap;
      align-items: center;
      gap: 50px;
-     padding-right: 20px;
+     padding: 20px;
+ }
+ .hobbies__box ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0px;
  }
  
  /*Formación Académica*/
@@ -288,9 +310,13 @@
      
  }
  .academic__courses__box{
+    padding: 20px;
+ }
+ .academic__courses__list{
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 0px;
  }
  
  /*Experiencia Profesional*/
@@ -314,6 +340,7 @@
  }
  .experience__img{
      width: 70%;
+     border-radius: 10px;
  }
  }
  .formcontato{
@@ -423,7 +450,15 @@
      display: flex;
      flex-wrap: wrap;
      align-items: center;
-     padding-left: 25px;
+     justify-content: space-evenly;
+     gap: 50px;
+     padding: 10px;
+ }
+ .hobbies__box ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
  }
   
  /*Formación Académica*/
@@ -433,9 +468,11 @@
      padding-left: 20px;
      width: 90%;
  }
- .academic__courses__box{
-     display: flex;
-     align-items: center;
+ .academic__courses__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
  }
  
  /*Experiencia Profesional*/
