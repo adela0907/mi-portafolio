@@ -29,7 +29,6 @@
  /*Sección Menu*/
  section.menu{
      background-color: rgb(209, 195, 253);
-     width: 100%;
      padding: 20px;
  }
  .menu__list__item__contato{
@@ -139,15 +138,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: nowrap;
  }
  .experience button {
-    background: #c8bffe;
-    color: rgb(0, 0, 0);
+    background: #8e7aff;
+    color: #000000;
     padding: 14px 28px;
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
     transition: background 0.3s ease;
+    border: 1px solid #8b5ff0;
 }
  .experience button:hover{
      background: #8b5ff0;  
@@ -156,6 +157,9 @@
  
  
  /*Contacto*/
+ .formcontato{
+    background: #c8bffe;
+ }
  .formcontato__text{
      padding-left: 20px;
  }
@@ -174,16 +178,17 @@
      border-radius: 5px;    
  }
  .formcontato__botao{
-    background: #c8bffe;
-    color: rgb(0, 0, 0);
+    background: #8e7aff;
+    color: #000000;
     padding: 14px 28px;
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
     transition: background 0.3s ease;
+    border: 1px solid #8b5ff0;
 }
 .formcontato__text button:hover{
-    background:  #8b5ff0; 
+    background:#8b5ff0  ; 
 
 }
  /*footeer*/
@@ -192,6 +197,7 @@
      padding: 2rem;
      justify-content: center;
      background-color:rgb(209, 195, 253);
+     width: 100%;
  }
  .footer__rodape{
      display: flex;
@@ -205,11 +211,12 @@
  @media (min-width: 500px) {
  
  /* Menú */
- .menu{
+ section.menu{
      display: flex;
      flex-direction: row;
      justify-content: space-around;
      gap: 10px;
+     width: 100%;
  }
  .menu__header{
      display: flex;
@@ -326,45 +333,61 @@
      justify-content: center;
      padding-top: 50px;
      align-items: center;
+     flex-direction: column;
  }
 
  .experience__box{
      display: flex;
      flex-wrap: wrap;
      gap: 30px;
-     width: 95%; 
-     align-items: center;
-     padding-top: 30px;
-     padding-left: 20px;
-     padding-bottom: 30px;
+     width: 60%; 
+     justify-content: center;
+     padding: 20px;
  }
+
  .experience__img{
-     width: 70%;
+     width: 50%;
      border-radius: 10px;
- }
- }
+     transition: transform 0.3s ease;
+    }
+         
+.experience__img:hover{
+        transform: scale(1.1);
+      }
+
  .formcontato{
-     width: 100%;
-     display: flex;
-     flex-direction:row;
+     display: flex; 
+     flex-direction:row ; 
+     flex-wrap: nowrap;
+     gap: 20px;
+     width: 80%;
+     justify-content: center;
      align-items: center;
-     padding-left: 20px;
-     padding-top: 150px;
+     padding: 20px;
+     border-radius: 10px;
+     margin: 50px;
+     
  }
  .imagen_contacto{
-     width: 100%;
+     width: 90%;
+     border-radius: 10px;
+     transition: transform 0.3s ease;
+}
      
+  .imagen_contacto:hover{
+    transform: scale(1.1);
   }
- 
+  }
  
  /*Mobile*/
  @media (max-width: 500px) {
  
  /*Menu*/
- .menu{
+ section.menu{
      display: flex;
      justify-content: space-around; 
      align-items: center;
+     width: 100%;
  }
  .menu__header{
      display: flex;
@@ -492,8 +515,14 @@
   .formcontato{
      display: flex;
      flex-direction: column;
+     width: 100%;
      
   }
+  .imagen_contacto{
+    width: 90%;
+    padding: 20px;
+    
+ }
  
  
  /*Footer*/
