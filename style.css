@@ -383,11 +383,17 @@ header{
  @media (max-width: 500px) {
  
  /*Menu*/
- section.menu{
+ header{
      display: flex;
      justify-content: space-around; 
      align-items: center;
-     width: 100%;
+    
+ }
+ .menu__logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
  }
  .menu__header{
      display: flex;
