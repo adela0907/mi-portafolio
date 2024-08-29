@@ -27,7 +27,7 @@
  /*BEM (Bloque, Elemento, Modificador)
  
  /*Sección Menu*/
- section.menu{
+ header{
      background-color: rgb(209, 195, 253);
      padding: 20px;
  }
@@ -172,6 +172,7 @@
  .formcontato__input{
      background: transparent;
      border-radius: 5px;
+     border: 2px solid #8e7aff;
  }
  .formcontato__textarea{
      background: transparent;
@@ -192,12 +193,11 @@
 
 }
  /*footeer*/
- section.footer{
+ footer{
      display: flex;
      padding: 2rem;
      justify-content: center;
      background-color:rgb(209, 195, 253);
-     width: 100%;
  }
  .footer__rodape{
      display: flex;
@@ -211,19 +211,19 @@
  @media (min-width: 500px) {
  
  /* Menú */
- section.menu{
+header{
      display: flex;
      flex-direction: row;
      justify-content: space-around;
      gap: 10px;
-     width: 100%;
  }
- .menu__header{
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     gap: 10px;
+ .menu__logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
  }
+
  .menu__list{
      display: flex;
      flex-direction: row;
